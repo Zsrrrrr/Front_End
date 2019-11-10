@@ -1,0 +1,30 @@
+#comment {
+    border: 1px dashed #cccccc;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px #cccccc;
+}
+#cmtHead {
+    font-size: 14px;
+}
+#content {
+    font-size: 12px;
+}
+
+#listHead {
+    color: red;
+    font-size: 35px;
+    z-index: 3;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+.title {
+    /* css样式表 */
+    text-decoration: underline;
+}
+/* h1 {
+    text-decoration: underline;
+} */
+
