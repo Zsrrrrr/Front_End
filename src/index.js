@@ -11,7 +11,7 @@ import * as serviceWorker from './serviceWorker';
  */
 
 import CmtList from './components/myTest_3_CmtList'
-import BindEvent from './components/BandEvent';
+import BindEvent from './components/BandEvent_1';
 
 
 

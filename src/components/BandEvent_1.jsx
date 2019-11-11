@@ -1,12 +1,41 @@
+//#region 绑定事件的标准格式
+
+// import React,{Component} from 'react'
+
+// class BindEvent extends Component {
+//     constructor() {
+//         super();
+//         this.state = { }
+//     }
+
+//     render(){
+//         return(
+//             <div>
+//                 <button onClick = { () => this.myClickHandler( arg ) }>Button</button>
+//             </div>
+//         )
+//     }
+
+//     myClickHandler = ( arg ) => {
+//         console.log(arg);
+//     }
+// } 
+
+// export default BindEvent;
+
+//#endregion
+
 import React,{Component} from 'react'
 import ReactDOM from 'react-dom'
+import { createGunzip } from 'zlib';
 
 class BindEvent extends Component {
     constructor() {
         super();
 
         this.state={
-            msg:'hhh'
+            msg:'hhh',
+            gender:'jjj'
         }
     }
 
@@ -32,8 +61,15 @@ class BindEvent extends Component {
          * 应该调用 React 提供的this.setState
          */
         this.setState({
+            /**
+             * this.setState的执行时异步的;
+             * 如果在 setState 之后想拿到最新的state值，需要回调(callback)；
+             * this.setState({}, callback);
+             */ 
             msg:'123' + arg1
-        })
+        },function(){ /*回调*/ console.log(this.state) })
+
+        //console.log(this.state);
     }
 } 
 
