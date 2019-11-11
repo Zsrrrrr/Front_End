@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import CmtItem from './myTest_3_CmtItem'    //导入子组件
 
+
+
 class CmtList extends Component {
     constructor(){
         super();
@@ -23,6 +25,7 @@ class CmtList extends Component {
                 {
                     this.state.CommentList.map(item=><CmtItem {...item} key={item.id}></CmtItem>)
                 }
+                <button>Button</button>
             </div>
         )
     }

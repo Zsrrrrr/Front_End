@@ -11,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
  */
 
 import CmtList from './components/myTest_3_CmtList'
+import BindEvent from './components/BandEvent';
 
 
 
@@ -47,7 +48,7 @@ const I = {
 }
 //...为展开运算符；
 
-ReactDOM.render(<CmtList />, document.getElementById('root'));
+ReactDOM.render(<BindEvent />, document.getElementById('root'));
 //ReactDOM.render(mydiv,document.getElementById('root'));
 //ReactDOM.render(<App />, document.getElementById('root'));
 
