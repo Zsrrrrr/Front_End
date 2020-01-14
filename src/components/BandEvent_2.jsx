@@ -12,6 +12,7 @@ class BindEvent extends Component {
     }
 
     render(){
+        console.log(this);
         return(
             <div>
                 <button onClick = { () => this.myClickHandler('lh','女') }>Button</button>

@@ -26,8 +26,9 @@ import BindEvent from './components/BandEvent_2';
     参数3：子节点（包括其他虚拟DOM 获取文本子节点）；
     参数n：其他子节点；
 */
-const myTest =React.createElement('h1',null,'My First Test!');
-const mydiv=React.createElement('div',null,'这是在外部嵌套的div',myTest);
+// const myTest =React.createElement('h1',null,'My First Test!');
+const myTest = <h1 id = 'mytitle'>My First Test</h1>;
+// const mydiv=React.createElement('div',null,'这是在外部嵌套的div',myTest);
 
 /*
     const mydiv = <div id="...">...</div>
@@ -46,8 +47,10 @@ const I = {
     age:23,
     sex:'male',
 }
-//...为展开运算符；
+//...为展开运算符,将数组中元素平铺；
 
+
+// ReactDOM.render(virtualDOM, containerDOM);
 ReactDOM.render(<BindEvent />, document.getElementById('root'));
 //ReactDOM.render(mydiv,document.getElementById('root'));
 //ReactDOM.render(<App />, document.getElementById('root'));
